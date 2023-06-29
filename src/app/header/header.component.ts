@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  
+  navActive = false;
+
+  navIconClick(){
+    this.navActive = !this.navActive;
+  }
 
 }
