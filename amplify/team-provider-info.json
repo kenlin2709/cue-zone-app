@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cuezoneaustralia-dev-164533-authRole",
+      "UnauthRoleArn": "arn:aws:iam::725088889231:role/amplify-cuezoneaustralia-dev-164533-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::725088889231:role/amplify-cuezoneaustralia-dev-164533-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-cuezoneaustralia-dev-164533-deployment",
+      "UnauthRoleName": "amplify-cuezoneaustralia-dev-164533-unauthRole",
+      "StackName": "amplify-cuezoneaustralia-dev-164533",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:725088889231:stack/amplify-cuezoneaustralia-dev-164533/8f05c340-1648-11ee-b125-02ae1e2ab4b4",
+      "AmplifyAppId": "d1j1cwjvmrt1sa"
+    }
+  }
+}
