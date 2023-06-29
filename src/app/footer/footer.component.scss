@@ -1,0 +1,20 @@
+.footer{
+    background-color: #161616;
+}
+.contact-container{
+    a i{
+        color: white;
+        font-size: 20px;
+    }
+    a i:hover{
+        color: #f3c811;;
+    }
+    .brand-container{
+        margin-left: auto;
+        span{
+            line-height: 40px;
+            margin-left: 20px;
+            color: #f3c811;
+        }
+    }
+}
