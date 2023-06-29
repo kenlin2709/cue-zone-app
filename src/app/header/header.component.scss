@@ -1,11 +1,8 @@
 .p-4{
     padding: 16px;
 }
-a{
+button{
     color: white;
-}
-a:hover, a:focus{
-    color: #f3c811;
 }
 .desk{
     display: block !important;
@@ -25,7 +22,10 @@ a:hover, a:focus{
     width: 100%;
     
 
-    a{
+    button{
+        border: none;
+        background-color: black;
+        color: white;
         text-decoration: none;
         font-family: Inter;
         span{
@@ -86,7 +86,11 @@ a:hover, a:focus{
     transform: translateY(-370px);
     transition: opacity 500ms ease-out, transform 500ms ease-out, visibility 500ms;
 
-    a{
+    button{  
+        color: white;
+        background-color: rgb(14, 13, 13);
+        border:none;
+        text-align: start;
         text-decoration: none;
         height: 60px;
         border-top: rgb(226, 219, 219) 1px solid;
@@ -107,4 +111,7 @@ a:hover, a:focus{
     transform: translateY(370px);
     transition: opacity 500ms ease-in, transform 500ms ease-in, visibility 500ms;
 
+}
+button:hover, button:focus{
+    color: #f3c811 !important;
 }

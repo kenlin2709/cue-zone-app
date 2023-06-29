@@ -7,7 +7,8 @@
 </head>
 <body>
   <app-header></app-header>
-  <router-outlet></router-outlet>
+  <app-home *ngIf="path === 'home'"></app-home>
+  <app-about-me *ngIf="path === 'about'"></app-about-me>
   <app-footer></app-footer>
 </body>
 </html>
