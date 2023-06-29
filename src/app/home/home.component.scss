@@ -10,7 +10,10 @@
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    transition: background-image 1s;
+    transition: background-image ease-in 1s;
+    @media screen and (max-width: 411px) {
+        background-position: -514px;
+    }
 }
 .dot-container{
     display: flex;
@@ -29,5 +32,9 @@
     }
     @media screen and (max-width: 600px) {
         gap: 0px;
+        span{
+            text-align: center;
+            width: 60px;
+        }
     }
 }

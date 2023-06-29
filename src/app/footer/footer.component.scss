@@ -20,6 +20,13 @@
         margin-left: auto;
         @media screen and (max-width: 600px) {
             padding: 5px;
+            padding-left: 10px;
+            img{
+                width: 30px;
+                height: 30px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
         }
         span{
             line-height: 40px;
@@ -27,6 +34,7 @@
             color: #f3c811;
             @media screen and (max-width: 600px) {
                 margin-left: 10px !important;
+                line-height: 20px;
             }
         }
 
