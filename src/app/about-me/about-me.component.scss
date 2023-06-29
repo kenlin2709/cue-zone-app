@@ -10,4 +10,10 @@
     margin-left: auto;
     margin-right: auto;
     opacity: 80%;
+    @media screen and (max-width: 600px) {
+        width: 90% !important;
+    }
+    img{
+        margin-right: 8px;
+    }
 }
