@@ -1,0 +1,10 @@
+<div class="slide-show">
+    <div class="slide" [ngStyle]="{'background-image': getCurrentImgUrl()}">
+        <div class="dot-container mx-auto">
+            <span class="material-symbols-outlined" [ngClass]="slideNumber === imgIndex ? 'active' : ''" *ngFor="let item of imgUrls; let imgIndex = index" (click)="goToSlide(imgIndex)">
+                counter_8
+            </span>
+        </div>
+    </div>
+    
+</div>
