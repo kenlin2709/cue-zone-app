@@ -1,4 +1,4 @@
-<div class="slide-show">
+<div class="slide-show mb-4">
     <div class="slide" [ngStyle]="{'background-image': getCurrentImgUrl()}">
         <div class="dot-container mx-auto">
             <span class="material-symbols-outlined" [ngClass]="slideNumber === imgIndex ? 'active' : ''" *ngFor="let item of imgUrls; let imgIndex = index" (click)="goToSlide(imgIndex)">
@@ -8,3 +8,9 @@
     </div>
     
 </div>
+<section class="px-2">
+    <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-red">Popular</span><h2 class="mb-0">Most Popular</h2></div>
+    <div class= "product-card">
+        <ui-product-card></ui-product-card>
+    </div>
+<section>
