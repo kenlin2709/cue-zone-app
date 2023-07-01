@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit{
     return  this.imgUrls[this.slideNumber];
   }
   goToSlide(index:number){
+    this.nextSlideCalled=true;
     this.slideNumber=index;
   }
 
