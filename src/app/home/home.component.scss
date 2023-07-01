@@ -41,12 +41,7 @@
 h2{
     font-size: 1.25rem;
 }
-section{
-    padding-left: 8px;
-    @media screen and (min-width: 600px) {
-        padding-left: 20px;
-    }
-}
+section{}
 .product-card{
     width: 60%;
     max-width: 300px;
