@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { UiProductCarouselComponent } from "./ui-product-carousel.component";
 import { SwiperModule } from 'swiper/angular';
 import { UiProductCardComponent } from "../ui-product-card/ui-product-card.component";
+import { BrowserModule } from "@angular/platform-browser";
 
 
 
@@ -12,6 +13,7 @@ import { UiProductCardComponent } from "../ui-product-card/ui-product-card.compo
     ],
     imports: [
         SwiperModule,
+        BrowserModule,
     ],
     providers: [],
     exports: [UiProductCarouselComponent,

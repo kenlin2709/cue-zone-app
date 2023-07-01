@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 
 import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Keyboard, Pagination, Navigation, Virtual, SwiperOptions } from 'swiper';
+import { IProduct } from 'src/app/product-detail-page/product-data';
 SwiperCore.use([Keyboard, Pagination, Navigation, Virtual]);
 
 
@@ -36,10 +37,16 @@ export class UiProductCarouselComponent{
       1271: {
         slidesPerView: 4.2,
         spaceBetween: 10,
+      },
+      1600:{
+        slidesPerView: 5.2,
+        spaceBetween: 15,
       }
       
     }
   };
+
+  @Input() products!:IProduct[];
 
   @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
 

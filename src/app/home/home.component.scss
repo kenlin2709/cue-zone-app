@@ -10,7 +10,7 @@
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    transition: background-image ease-in 1s;
+    transition: background-image ease-out 1s;
     @media screen and (max-width: 600px) {
         background-position: 91%
     }

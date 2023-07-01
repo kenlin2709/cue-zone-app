@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 
 
 
@@ -18,13 +19,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HomeComponent,
     FooterComponent,
     AboutMeComponent,
+    ProductDetailPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     UiProductCarouselModule,
+    BrowserModule,
   ],
-  providers: [],
+  providers: [ProductDetailPageComponent,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

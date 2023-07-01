@@ -5,10 +5,5 @@
       [navigation]="true"
       [scrollbar]="{ draggable: true }"
     >
-      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
-      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
-      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
-      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
-      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
-      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
+      <ng-template swiperSlide *ngFor="let product of products"><ui-product-card [product]="product"></ui-product-card></ng-template>
     </swiper>
