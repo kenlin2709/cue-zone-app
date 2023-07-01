@@ -11,8 +11,8 @@
     display: flex;
     align-items: flex-end;
     transition: background-image ease-in 1s;
-    @media screen and (max-width: 411px) {
-        background-position: -514px;
+    @media screen and (max-width: 600px) {
+        background-position: 91%
     }
 }
 .dot-container{
