@@ -1,1 +1,14 @@
-<p>ui-product-carousel works!</p>
+<swiper
+      [config]="config"
+      (swiper)="onSwiper($event)"
+      (slideChange)="onSlideChange()"
+      [navigation]="true"
+      [scrollbar]="{ draggable: true }"
+    >
+      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
+      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
+      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
+      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
+      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
+      <ng-template swiperSlide><ui-product-card></ui-product-card></ng-template>
+    </swiper>
