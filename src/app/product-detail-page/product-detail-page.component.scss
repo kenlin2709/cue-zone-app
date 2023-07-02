@@ -23,7 +23,7 @@
 
         .img-container{
             width: 100%;
-            aspect-ratio: 1.5;
+            aspect-ratio: 1.15;
             margin-left: auto;
             margin-right: auto;
             border: solid 1px whitesmoke;
@@ -32,7 +32,7 @@
             align-self: flex-start;
             .img-wrapper{
                 width: 100%;
-                aspect-ratio: 1.5;
+                aspect-ratio: 1.15;
                 overflow: hidden;
                 border-radius: 17px;
 
@@ -67,7 +67,7 @@
         padding: 15px 8px;
         border-radius: 10px;
         @media screen and (min-width: 600px){
-           height: 400px;
+           height: 350px;
            overflow: auto;
         }
     }

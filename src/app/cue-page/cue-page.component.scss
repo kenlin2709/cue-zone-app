@@ -14,5 +14,9 @@
         a:hover{
             color: #403f3f;
         }
+        margin-left: 2.5%;
+        @media screen and (min-width: 1300px) {
+            margin-left: calc( 50% - 560px);
+        }
     }
 }

@@ -1,3 +1,4 @@
+import { limitedProduct } from './../../../product-detail-page/product-data';
 import { Component } from '@angular/core';
 import { IProduct, eleganceSeriesProduct, getProductDataByProductCodes, productDetailData } from 'src/app/product-detail-page/product-data';
 import { SwiperOptions } from 'swiper';
@@ -9,6 +10,6 @@ import { SwiperOptions } from 'swiper';
 })
 export class CuePlayingComponent {
   eleganceSeriesProducts = getProductDataByProductCodes(eleganceSeriesProduct);
-
+  limitedProducts = getProductDataByProductCodes(limitedProduct);
 
 }

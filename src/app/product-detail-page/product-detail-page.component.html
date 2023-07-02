@@ -8,7 +8,7 @@
                     </div>
                 </div>
                 <div class="product-text-container">
-                    <h1>Product Name: {{product.name}}</h1>
+                    <h1>{{product.name}}</h1>
                     <p>Price: AU${{product.price}}</p>
                     <p>Item Code: {{product.itemCode}}</p>
                     <p class="clickable" (click)="toggle()">Item Description <span class="material-symbols-outlined" *ngIf="!productDescriptionActive">expand_more</span><span *ngIf="productDescriptionActive" class="material-symbols-outlined">expand_less</span></p>
