@@ -1,0 +1,18 @@
+.cues-page{
+    background-color: whitesmoke;
+    padding: 12px 16px;
+    .cue-page-nav{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap:12px;
+        overflow: scroll;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: #403f3f;
+        }
+    }
+}

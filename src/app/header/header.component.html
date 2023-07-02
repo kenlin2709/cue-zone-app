@@ -5,7 +5,7 @@
         <div class="header-nav d-flex">
             <a class="align-self-end" routerLink="/about">About <span class="material-symbols-outlined">arrow_right</span></a> 
             <a class="align-self-end" routerLink="/home">Home <span class="material-symbols-outlined">arrow_right</span></a>
-            <a class="align-self-end" >Cues <span class="material-symbols-outlined">arrow_right</span></a>
+            <a class="align-self-end" routerLink="/cues">Cues <span class="material-symbols-outlined">arrow_right</span></a>
             <a class="align-self-end" >Shafts <span class="material-symbols-outlined">arrow_right</span></a>
             <a class="align-self-end" >Accessories <span class="material-symbols-outlined">arrow_right</span></a>
         </div>
@@ -19,11 +19,11 @@
         <i [ngClass]="!navActive ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'" (click)="navIconClick()"></i>
     </div>
     <div class="nav-menu d-flex flex-column" [ngClass]="navActive ? 'is-active': ''">
-        <a routerLink="/about">About <span class="material-symbols-outlined">arrow_right</span></a> 
-        <a routerLink="/home">Home <span class="material-symbols-outlined">arrow_right</span></a>
-        <a routerLink="/about">Cues <span class="material-symbols-outlined">arrow_right</span></a>
-        <a routerLink="/about">Shafts <span class="material-symbols-outlined">arrow_right</span></a>
-        <a routerLink="/about">Accessories <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/about" (click)="navIconClick()">About <span class="material-symbols-outlined">arrow_right</span></a> 
+        <a routerLink="/home" (click)="navIconClick()">Home <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/cues" (click)="navIconClick()">Cues <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/shafts" (click)="navIconClick()">Shafts <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/accessories" (click)="navIconClick()">Accessories <span class="material-symbols-outlined">arrow_right</span></a>
         <br>
         <br>
     </div>
