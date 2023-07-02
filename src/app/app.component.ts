@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cue-zone-app';
-  path= 'home' || 'about'
-
-  setPath(path:string){
-    this.path = path
-  }
 }
