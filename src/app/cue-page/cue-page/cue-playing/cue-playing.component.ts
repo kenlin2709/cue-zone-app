@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IProduct, productDetailData } from 'src/app/product-detail-page/product-data';
+import { IProduct, eleganceSeriesProduct, getProductDataByProductCodes, productDetailData } from 'src/app/product-detail-page/product-data';
+import { SwiperOptions } from 'swiper';
 
 @Component({
   selector: 'app-cue-playing',
@@ -7,5 +8,7 @@ import { IProduct, productDetailData } from 'src/app/product-detail-page/product
   styleUrls: ['./cue-playing.component.scss']
 })
 export class CuePlayingComponent {
-  eleganceSeriesProducts = Object.values(productDetailData) as IProduct[];
+  eleganceSeriesProducts = getProductDataByProductCodes(eleganceSeriesProduct);
+
+
 }

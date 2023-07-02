@@ -1,4 +1,4 @@
-import { IProduct, productDetailData } from './../../product-detail-page/product-data';
+import { IProduct, getProductDataByProductCodes, limitedProduct, productDetailData } from './../../product-detail-page/product-data';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class CueDiscoverComponent {
 
-  limitedProducts = Object.values(productDetailData) as IProduct[];
+  limitedProducts = getProductDataByProductCodes(limitedProduct);
 }

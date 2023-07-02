@@ -14,10 +14,11 @@ SwiperCore.use([Keyboard, Pagination, Navigation, Virtual]);
 })
 export class UiProductCarouselComponent{
 
-  config: SwiperOptions = {
+  @Input() config: SwiperOptions = {
     slidesPerView: 1.5,
     spaceBetween: 10,
     navigation: true,
+    scrollbar:{ draggable: true },
 
     breakpoints: {
       // when window width is >= 320px

@@ -1,9 +1,6 @@
 <swiper
       [config]="config"
-      (swiper)="onSwiper($event)"
-      (slideChange)="onSlideChange()"
-      [navigation]="true"
-      [scrollbar]="{ draggable: true }"
+      
     >
       <ng-template swiperSlide *ngFor="let product of products"><ui-product-card [product]="product"></ui-product-card></ng-template>
     </swiper>
