@@ -19,7 +19,6 @@ export class UiProductCardComponent {
 
   onClick(){
     this.productDetailComponent.setProductItemCode(this.product.itemCode);
-    this.appComponent.setPath('product-detail');
     
   }
 }

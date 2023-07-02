@@ -3,11 +3,11 @@
     <div class="d-flex p-4 header-container">
         <img src="assets/images/cue-zone-aus-logo-transparent.png" width="150px">
         <div class="header-nav d-flex">
-            <a class="align-self-end" href="/about">About <span class="material-symbols-outlined">arrow_right</span></a> 
-            <a class="align-self-end" href="">Home <span class="material-symbols-outlined">arrow_right</span></a>
-            <a class="align-self-end" href="">Cues <span class="material-symbols-outlined">arrow_right</span></a>
-            <a class="align-self-end" href="">Shafts <span class="material-symbols-outlined">arrow_right</span></a>
-            <a class="align-self-end" href="">Accessories <span class="material-symbols-outlined">arrow_right</span></a>
+            <a class="align-self-end" routerLink="/about">About <span class="material-symbols-outlined">arrow_right</span></a> 
+            <a class="align-self-end" routerLink="/home">Home <span class="material-symbols-outlined">arrow_right</span></a>
+            <a class="align-self-end" >Cues <span class="material-symbols-outlined">arrow_right</span></a>
+            <a class="align-self-end" >Shafts <span class="material-symbols-outlined">arrow_right</span></a>
+            <a class="align-self-end" >Accessories <span class="material-symbols-outlined">arrow_right</span></a>
         </div>
     </div>
 </div>
@@ -19,11 +19,11 @@
         <i [ngClass]="!navActive ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'" (click)="navIconClick()"></i>
     </div>
     <div class="nav-menu d-flex flex-column" [ngClass]="navActive ? 'is-active': ''">
-        <a href="/about">About <span class="material-symbols-outlined">arrow_right</span></a> 
-        <a href="">Home <span class="material-symbols-outlined">arrow_right</span></a>
-        <a href="">Cues <span class="material-symbols-outlined">arrow_right</span></a>
-        <a href="">Shafts <span class="material-symbols-outlined">arrow_right</span></a>
-        <a href="">Accessories <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/about">About <span class="material-symbols-outlined">arrow_right</span></a> 
+        <a routerLink="/home">Home <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/about">Cues <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/about">Shafts <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/about">Accessories <span class="material-symbols-outlined">arrow_right</span></a>
         <br>
         <br>
     </div>
