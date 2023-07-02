@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import {interval} from 'rxjs';
-import { productDetailData } from '../product-detail-page/product-data';
+import { IProduct, productDetailData } from '../product-detail-page/product-data';
 
 @Component({
   selector: 'app-home',
@@ -14,9 +14,9 @@ export class HomeComponent implements OnInit{
   nextSlideCalled = false;
 
   imgUrls = ['url(/assets/images/peri-landing-images/xianliang.jpg)', 'url(/assets/images/peri-landing-images/4.jpg)', 'url(/assets/images/peri-landing-images/202343135458.jpg)', 'url(/assets/images/peri-landing-images/paimingsai.jpg)']
-  limitedProducts = productDetailData;
-  popularProducts = productDetailData;
-  accessories = productDetailData;
+  limitedProducts = Object.values(productDetailData) as IProduct[];
+  popularProducts = Object.values(productDetailData) as IProduct[];
+  accessories = Object.values(productDetailData) as IProduct[];
  ngOnInit(): void {
   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
   //Add 'implements OnInit' to the class.

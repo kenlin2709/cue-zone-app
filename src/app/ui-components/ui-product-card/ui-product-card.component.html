@@ -1,4 +1,4 @@
-<div class="product-card-container" (click)="onClick()">
+<div class="product-card-container" [routerLink]="['/product-detail/' + product.itemCode]" routerLinkActive="router-link-active">
     <div class="img-container">
         <img [src]="'assets/images/peri-product-images/' + product.coverImgUrl" alt="">
     </div>

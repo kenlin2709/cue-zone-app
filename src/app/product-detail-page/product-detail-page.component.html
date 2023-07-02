@@ -1,28 +1,27 @@
-<div [ngSwitch]="">
-    <ng-container *ngFor="let product of products">
-        <div class="product-detail-page" *ngSwitchCase="product.itemCode">
-            <div class="product-detail-container">
-                <div class="image-text-container">
-                    <div class="img-container mb-2">
-                        <div class="img-wrapper">
-                            <img [src]="'assets/images/peri-product-images/' + product.coverImgUrl" alt="">
-                        </div>
-                    </div>
-                    <div class="product-text-container">
-                        <h1>Product Name: {{product.name}}</h1>
-                        <p>Price: AU${{product.price}}</p>
-                        <p>Item Code: {{product.itemCode}}</p>
-                        <p class="clickable" (click)="toggle()">Item Description <span class="material-symbols-outlined" *ngIf="!productDescriptionActive">expand_more</span><span *ngIf="productDescriptionActive" class="material-symbols-outlined">expand_less</span></p>
-                        <div class="item-description" *ngIf="productDescriptionActive">
-                            <p>{{product.description}}</p>
-                        </div>
+<div>
+    <div class="product-detail-page">
+        <div class="product-detail-container">
+            <div class="image-text-container">
+                <div class="img-container mb-2">
+                    <div class="img-wrapper">
+                        <img [src]="'assets/images/peri-product-images/' + product.coverImgUrl" alt="">
                     </div>
                 </div>
-        
-                <h2 class="mt-5">Product Images</h2>
-                <img *ngFor="let imgUrl of product.productImgUrls" class="mb-2" [src]="'assets/images/peri-product-images/' + imgUrl" alt="">
+                <div class="product-text-container">
+                    <h1>Product Name: {{product.name}}</h1>
+                    <p>Price: AU${{product.price}}</p>
+                    <p>Item Code: {{product.itemCode}}</p>
+                    <p class="clickable" (click)="toggle()">Item Description <span class="material-symbols-outlined" *ngIf="!productDescriptionActive">expand_more</span><span *ngIf="productDescriptionActive" class="material-symbols-outlined">expand_less</span></p>
+                    <div class="item-description" *ngIf="productDescriptionActive">
+                        <p>{{product.description}}</p>
+                    </div>
+                </div>
             </div>
-          
+    
+            <h2 class="mt-5">Product Images</h2>
+            <img *ngFor="let imgUrl of product.productImgUrls" class="mb-2" [src]="'assets/images/peri-product-images/' + imgUrl" alt="">
         </div>
-      </ng-container>
+        
+    </div>
 </div>
+ 
