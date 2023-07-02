@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { productDetailData } from './product-data';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail-page',
@@ -9,12 +10,16 @@ import { productDetailData } from './product-data';
 export class ProductDetailPageComponent {
   productDescriptionActive = false;
   products = productDetailData;
-  productItemCode = 'PSX-01';
+  
+  constructor(private route: ActivatedRoute){}
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.route.params.pipe()
+  }
 
   toggle() {
     this.productDescriptionActive = !this.productDescriptionActive;
-  }
-  setProductItemCode(itemCode: string) {
-    this.productItemCode = itemCode;
   }
 }
