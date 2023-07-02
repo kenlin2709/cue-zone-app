@@ -3,7 +3,7 @@
     <div class="d-flex p-4 header-container">
         <img src="assets/images/cue-zone-aus-logo-transparent.png" width="150px">
         <div class="header-nav d-flex">
-            <button class="align-self-end"  (click)="setPath('about')">About <span class="material-symbols-outlined">arrow_right</span></button> 
+            <a class="align-self-end"  routerLink="./about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">About <span class="material-symbols-outlined">arrow_right</span></a> 
             <button class="align-self-end"  (click)="setPath('home')">Home<span class="material-symbols-outlined">arrow_right</span></button>
             <button class="align-self-end" >Cues <span class="material-symbols-outlined">arrow_right</span></button>
             <button class="align-self-end" >Shafts <span class="material-symbols-outlined">arrow_right</span></button>
