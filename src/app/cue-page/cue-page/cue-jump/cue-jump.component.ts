@@ -1,3 +1,4 @@
+import { getProductDataByProductCodes, jumpCueSeriesProduct } from './../../../product-detail-page/product-data';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cue-jump.component.scss']
 })
 export class CueJumpComponent {
-
+  jumpCueSeriesProducts = getProductDataByProductCodes(jumpCueSeriesProduct);
 }
