@@ -16,6 +16,25 @@ export interface IProduct{
 export interface IProductData{
     [key: string]: IProduct,
 }
+export const infinitySeriesProduct: string[] = [
+    'INFINITYII-PX2-01','INFINITYII-PX2-02', 'INFINITYII-PX2-02A', 'INFINITYII-PX2-03', 'INFINITYII-PX2-03A', 'INFINITY-PX-02', 'INFINITY-PX-03',
+]
+export const limitedProduct: string[] = [
+    'PSX-01', 'PSX-02', 'PWX-02', 'PT-SK1'
+]
+export const eleganceSeriesProduct: string[] = [
+    'ELEGANCE-LV-04', 'ELEGANCE-LV-03', 'ELEGANCE-LV-02', 'ELEGANCE-LV-01', 'ELEGANCE-VK-01', 'ELEGANCE-VK-02', 'ELEGANCE-VK-03',
+    'ELEGANCEIII-V30-04', 'ELEGANCEIII-V30-05', 'ELEGANCEIII-V30-03', 'ELEGANCEIII-V30-01',
+]
+export const taichiSeriesProduct: string[] = [
+    'TaiChiII-PS2-01', 'TaiChiII-PS2-02', 'TaiChiII-PS2-04'
+]
+export const jumpCueSeriesProduct: string[] = [
+    'PWX-T1', 'PBH-T1', 'PBH-T2', 'PBH-H1'
+]
+export const mostPopularProduct: string[] = [
+    
+]
 const sampleProductDetailData: IProduct = {
     name: '玉玺 Yuxi',
     price: 23888,
@@ -186,7 +205,7 @@ export const productDetailData: IProductData = {
     'TaiChiII-PS2-01':  { name: '太极二代 TaiChiII PS2-01',
     price: 2088,
     coverImgUrl: 'TaiChiII-PS2-01-cover.jpg',
-    productImgUrls: ['TaiChiII-PS2-01-1.jpg', 'TaiChiII-PS2-01-2.jpg','TaiChiII-PS2-01-3.jpg','TaiChiII-PS2-01-4.jpg','TaiChiII-PS2-01-5.jpg','TaiChiII-PS2-01-6.jpg','TaiChiII-PS2-01-7.jpg','TaiChiII-PS2-01-8.jpg',],
+    productImgUrls: ['TaiChiII-PS2-01-0.jpg','TaiChiII-PS2-01-1.jpg', 'TaiChiII-PS2-01-2.jpg','TaiChiII-PS2-01-3.jpg','TaiChiII-PS2-01-4.jpg','TaiChiII-PS2-01-5.jpg','TaiChiII-PS2-01-6.jpg','TaiChiII-PS2-01-7.jpg','TaiChiII-PS2-01-8.jpg',],
     itemCode:'TaiChiII-PS2-01',
     description: 'Please find the description on the image for more information',
     type: 'cue',
@@ -325,13 +344,6 @@ export const productDetailData: IProductData = {
     },
 }
 
-export const limitedProduct: string[] = [
-    'PSX-01', 'PSX-02', 'PWX-02', 'PT-SK1'
-]
-export const eleganceSeriesProduct: string[] = [
-    'ELEGANCE-LV-04', 'ELEGANCE-LV-03', 'ELEGANCE-LV-02', 'ELEGANCE-LV-01', 'ELEGANCE-VK-01', 'ELEGANCE-VK-02', 'ELEGANCE-VK-03',
-    'ELEGANCEIII-V30-04', 'ELEGANCEIII-V30-05', 'ELEGANCEIII-V30-03', 'ELEGANCEIII-V30-01',
-]
 
 export function getProductDataByProductCodes(itemCodes: string[]): IProduct[]{
     let tempArr: IProduct[] = [];
