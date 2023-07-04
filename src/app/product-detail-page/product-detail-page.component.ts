@@ -11,6 +11,7 @@ export class ProductDetailPageComponent {
   productDescriptionActive = false;
   products = productDetailData;
   product!: IProduct;
+  showSubmitForm = false;
   
   constructor(private route: ActivatedRoute){}
 
@@ -25,4 +26,13 @@ export class ProductDetailPageComponent {
   toggle() {
     this.productDescriptionActive = !this.productDescriptionActive;
   }
+  openShowSubmitForm(){
+    this.showSubmitForm = true;
+  }
+  closeShowSubmitForm(){
+    this.showSubmitForm = false;
+  }
+
+  
 }
+

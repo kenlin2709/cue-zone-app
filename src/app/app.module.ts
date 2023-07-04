@@ -13,6 +13,7 @@ import { CuePageComponent } from './cue-page/cue-page.component';
 import { CueDiscoverComponent } from './cue-page/cue-discover/cue-discover.component';
 import { CueRoutingModule } from './cue-page/cue-routing/cue-routing.module';
 import { CuePageModule } from './cue-page/cue-page.module';
+import { SubmitEnquiryFormModule } from './ui-components/submit-enquiry-form/submit-enquiry-form.module';
 
 
 
@@ -30,7 +31,8 @@ import { CuePageModule } from './cue-page/cue-page.module';
     AppRoutingModule,
     UiProductCarouselModule,
     BrowserModule,
-    CuePageModule
+    CuePageModule,
+    SubmitEnquiryFormModule,
   ],
   providers: [ProductDetailPageComponent,],
   bootstrap: [AppComponent]

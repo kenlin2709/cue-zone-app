@@ -8,20 +8,26 @@
                     </div>
                 </div>
                 <div class="product-text-container">
-                    <h1>{{product.name}}</h1>
-                    <p>Price: AU${{product.price}}</p>
+                    <button class="btn btn-primary mobile" (click)="openShowSubmitForm()">Enquiry now</button>
+                    <h1 class="mt-4">{{product.name}}</h1>
+                    <p class="fw-semibold"> AU${{product.price}}</p>
                     <p>Item Code: {{product.itemCode}}</p>
-                    <p class="clickable" (click)="toggle()">Item Description <span class="material-symbols-outlined" *ngIf="!productDescriptionActive">expand_more</span><span *ngIf="productDescriptionActive" class="material-symbols-outlined">expand_less</span></p>
-                    <div class="item-description" *ngIf="productDescriptionActive">
+                    <p class="clickable" (click)="toggle()">Item Description <span class="material-symbols-outlined mobile" *ngIf="!productDescriptionActive">expand_more</span><span *ngIf="productDescriptionActive mobile" class="material-symbols-outlined">expand_less</span></p>
+                    <div class="item-description mobile" *ngIf="productDescriptionActive">
                         <p [innerHTML]="product.description"></p>
                     </div>
+                    <div class="item-description desktop">
+                        <p [innerHTML]="product.description"></p>
+                    </div>
+                    <button class="btn btn-primary desktop" (click)="openShowSubmitForm()">Enquiry now</button>
                 </div>
             </div>
     
             <h2 class="mt-5">Product Images</h2>
             <img *ngFor="let imgUrl of product.productImgUrls" class="mb-2" [src]="'assets/images/peri-product-images/' + imgUrl" alt="">
         </div>
-        
     </div>
+    <submit-enquiry-form *ngIf="showSubmitForm"></submit-enquiry-form>
+    
 </div>
  

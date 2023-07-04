@@ -19,6 +19,26 @@
                 margin-top: 10px;
                 margin-left: 20px;
             }
+            .btn-primary{
+                width: 100%;
+                margin-top: 16px;
+            }
+            .btn-primary:hover{
+                background-color: #4a4b4b;
+            }
+            .btn-primary:active{
+                background-color: #6c6f6f;
+            }
+            .mobile{
+                @media screen and (min-width: 600px) {
+                    display: none !important;
+                }
+            }
+            .desktop{
+                @media screen and (max-width: 599px) {
+                    display: none !important;
+                }
+            }
         }
 
         .img-container{
@@ -67,7 +87,7 @@
         padding: 15px 8px;
         border-radius: 10px;
         @media screen and (min-width: 600px){
-           height: 350px;
+           height: 300px;
            overflow: auto;
         }
     }

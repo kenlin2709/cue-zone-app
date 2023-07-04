@@ -1,0 +1,113 @@
+.enquiry-form-container{
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    border: 0.5px solid rgb(93, 90, 90, 0.5);
+    padding: 15px;
+    position: fixed;
+    top: 100px;
+    left: 5%;
+    box-shadow: 1px 1px 1px 1px rgb(153, 149, 149);
+    z-index: 100;
+    max-width: 400px;
+    opacity: 0.97;
+    @media screen and (min-width: 440px){
+        left:calc(50% - 200px);
+    }
+    @media screen and (min-width: 440px){
+        top: 100px;
+    }
+
+
+    .equiry-form{
+        padding: 25px;
+    }
+    Input{
+        width: 100%;
+    }
+    .suburb{
+        margin-right: 138px;
+    }
+    #suburb{
+        width: 55%;
+        display: inline-block;
+        margin-right: 28px;
+    }
+    #postcode{
+        width: 35%;
+    }
+
+    Input:focus {
+        box-shadow: 0 0 5px #2e2f2f;
+        outline: #2e2f2f;
+    }
+    textArea{
+        width: 100%;
+        height: 120px;
+    }
+    textArea:focus {
+        box-shadow: 0 0 5px #2e2f2f;
+        outline: #2e2f2f;
+    }
+    p{
+        font-size: 14px;
+        color: rgb(191, 89, 89);
+    }
+    button{
+        width: 92%;
+        background-color: #2e2f2f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        margin-top: 20px;
+        position: absolute;
+        bottom:20px;
+    }
+    button:active{
+        background-color: #6c6f6f;
+    }
+    button:hover{
+        background-color: #4a4b4b;
+    }
+
+
+
+
+}
+.message-success{
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    border: 0.5px solid rgb(93, 90, 90, 0.5);
+    padding: 15px;
+    position: fixed;
+    top: 50px;
+    left: 5%;
+    box-shadow: 1px 1px 1px 1px rgb(153, 149, 149);
+    z-index: 100;
+    max-width: 400px;
+    opacity: 0.97;
+    @media screen and (min-width: 440px){
+        left:calc(50% - 200px);
+    }
+    @media screen and (min-width: 440px){
+        top: 200px;
+    }
+    button{
+        width: 92%;
+        background-color: #2e2f2f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        margin-top: 20px;
+        position: absolute;
+        bottom:20px;
+    }
+    button:active{
+        background-color: #6c6f6f;
+    }
+}

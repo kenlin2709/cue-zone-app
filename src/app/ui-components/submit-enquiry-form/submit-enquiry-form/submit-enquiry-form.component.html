@@ -1,0 +1,22 @@
+<div *ngIf="!messageSent" class="enquiry-form-container">
+    <div class="enquiry-form">
+        <h2 class="mb-4 d-inline-block">Enquiry form</h2> <span class="material-symbols-outlined clickable float-right" (click)="closeSubmitForm()">close</span>
+        <form [formGroup]="enquiryFormControl" (ngSubmit)="onSubmit()">
+            <label class="d-block mb-1" for="name">Full Name: *</label>
+            <input id="name" type="text" formControlName="name">
+            <label class="d-block mb-1 mt-2" for="email">Contact Email: *</label>
+            <input id="email" type="email" formControlName="email">
+            <div class="mt-2 mb-1"><span class="suburb">Suburb: *</span><span>Postcode: *</span></div>
+            <input type="text" id="suburb" formControlName="suburb"> <input type="text" id="postcode" formControlName="postcode">
+            <label class="d-block mb-1 mt-2" for="message">Message: *</label>
+            <textarea id="message" type="text" formControlName="message"> </textarea>
+            <p *ngIf="!enquiryFormControl.valid && submitClicked">Please ensure all sections are valid to submit<p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div *ngIf="messageSent" class="message-success">
+    <h2 class="mb-4 d-inline-block">Thank you</h2> <span class="material-symbols-outlined clickable float-right" (click)="closeSubmitForm()">close</span>
+    <p>Your message has been sent successfuly, our team will get back to you as soon as possible.</p>
+    <button (click)="closeSubmitForm()">Got it</button>
+</div>
