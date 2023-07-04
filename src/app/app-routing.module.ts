@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { CuePageComponent } from './cue-page/cue-page.component';
+import { AccessoriesPageComponent } from './accessories-page/accessories-page.component';
 
 const routes: Routes = [
   {path: 'home', redirectTo:''},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'about', component: AboutMeComponent},
   {path: 'product-detail/:id', component: ProductDetailPageComponent},
   {path: 'cues', loadChildren: () => import('./cue-page/cue-page.module').then(m => m.CuePageModule),},
+  {path: 'accessories', component: AccessoriesPageComponent},
 
 ];
 
