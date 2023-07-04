@@ -14,7 +14,6 @@ import { CueDiscoverComponent } from './cue-page/cue-discover/cue-discover.compo
 import { CueRoutingModule } from './cue-page/cue-routing/cue-routing.module';
 import { CuePageModule } from './cue-page/cue-page.module';
 import { SubmitEnquiryFormModule } from './ui-components/submit-enquiry-form/submit-enquiry-form.module';
-import { AccessoriesPageComponent } from './accessories-page/accessories-page.component';
 
 
 
@@ -26,7 +25,6 @@ import { AccessoriesPageComponent } from './accessories-page/accessories-page.co
     FooterComponent,
     AboutMeComponent,
     ProductDetailPageComponent,
-    AccessoriesPageComponent,
   ],
   imports: [
     BrowserModule,

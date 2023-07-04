@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import {interval} from 'rxjs';
-import { IProduct, accessoryProduct, eleganceSeriesProduct, getProductDataByProductCodes, limitedProduct, productDetailData } from '../product-detail-page/product-data';
+import { IProduct, eleganceSeriesProduct, getProductDataByProductCodes, limitedProduct, productDetailData } from '../product-detail-page/product-data';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit{
   imgUrls = ['url(/assets/images/peri-landing-images/xianliang.jpg)', 'url(/assets/images/peri-landing-images/4.jpg)', 'url(/assets/images/peri-landing-images/202343135458.jpg)', 'url(/assets/images/peri-landing-images/paimingsai.jpg)']
   limitedProducts = getProductDataByProductCodes(limitedProduct);
   popularProducts = getProductDataByProductCodes(eleganceSeriesProduct);
-  accessories = getProductDataByProductCodes(accessoryProduct);
+  accessories = getProductDataByProductCodes(eleganceSeriesProduct);
  ngOnInit(): void {
   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
   //Add 'implements OnInit' to the class.

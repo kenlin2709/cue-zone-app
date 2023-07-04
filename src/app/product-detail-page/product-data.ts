@@ -32,9 +32,6 @@ export const taichiSeriesProduct: string[] = [
 export const jumpCueSeriesProduct: string[] = [
     'PWX-T1', 'PBH-T1', 'PBH-T2', 'PBH-H1'
 ]
-export const accessoryProduct: string[] = [
-    'ACCS-PERI-CHALKPRO', 'ACCS-PERI-CHALK', 'ACCS-PERI-GLOVE01', 'ACCS-PERI-GLOVE02', 'ACCS-PERI-TOWEL', 'ACCS-PERI-EXTENSION'
-  ]
 export const mostPopularProduct: string[] = [
     
 ]
@@ -387,7 +384,7 @@ export const productDetailData: IProductData = {
     },
     'ACCS-PERI-TOWEL':  { name: '皮尔力毛巾 PERI TOWEL',
     price: 19,
-    coverImgUrl: 'ACCS-PERI-TOWEL-cover.jpg',
+    coverImgUrl: 'ACCS-PERI-GLOVE02-cover.jpg',
     productImgUrls: ['ACCS-PERI-TOWEL-1.jpg', 'ACCS-PERI-TOWEL-2.jpg','ACCS-PERI-TOWEL-3.jpg','ACCS-PERI-TOWEL-4.jpg','ACCS-PERI-TOWEL-5.jpg',],
     itemCode:'ACCS-PERI-TOWEL',
     description: 'Please find the description on the image for more information',
