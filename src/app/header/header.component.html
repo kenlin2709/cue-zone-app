@@ -5,7 +5,7 @@
         <div class="header-nav d-flex">
             <a class="align-self-end" routerLink="/about">About <span class="material-symbols-outlined">arrow_right</span></a> 
             <a class="align-self-end" routerLink="/home">Home <span class="material-symbols-outlined">arrow_right</span></a>
-            <a class="align-self-end" routerLink="/cues">Cues <span class="material-symbols-outlined">arrow_right</span></a>
+            <a class="align-self-end" routerLink="/cues/discover">Cues <span class="material-symbols-outlined">arrow_right</span></a>
             <a class="align-self-end" >Shafts <span class="material-symbols-outlined">arrow_right</span></a>
             <a class="align-self-end" routerLink="/accessories" >Accessories <span class="material-symbols-outlined">arrow_right</span></a>
         </div>
@@ -21,7 +21,7 @@
     <div class="nav-menu d-flex flex-column" [ngClass]="navActive ? 'is-active': ''">
         <a routerLink="/about" (click)="navIconClick()">About <span class="material-symbols-outlined">arrow_right</span></a> 
         <a routerLink="/home" (click)="navIconClick()">Home <span class="material-symbols-outlined">arrow_right</span></a>
-        <a routerLink="/cues" (click)="navIconClick()">Cues <span class="material-symbols-outlined">arrow_right</span></a>
+        <a routerLink="/cues/discover" (click)="navIconClick()">Cues <span class="material-symbols-outlined">arrow_right</span></a>
         <a routerLink="/shafts" (click)="navIconClick()">Shafts <span class="material-symbols-outlined">arrow_right</span></a>
         <a routerLink="/accessories" (click)="navIconClick()">Accessories <span class="material-symbols-outlined">arrow_right</span></a>
         <br>
