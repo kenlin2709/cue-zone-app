@@ -14,8 +14,8 @@
 
 <div class="mobile">
     <div class="header-container-sm d-flex">
-        <img src="assets/images/cue-zone-aus-logo-transparent.png" width="40px" routerLink="/home">
-        <span class="pointer-cursor" routerLink="/home">Cue Zone Australia</span>
+        <img src="assets/images/cue-zone-aus-logo-transparent.png" width="40px" routerLink="/home" class="clickable">
+        <span class="pointer-cursor" routerLink="/home" class="clickable">Cue Zone Australia</span>
         <i [ngClass]="!navActive ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'" (click)="navIconClick()"></i>
     </div>
     <div class="nav-menu d-flex flex-column" [ngClass]="navActive ? 'is-active': ''">
