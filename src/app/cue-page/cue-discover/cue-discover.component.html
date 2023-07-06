@@ -1,4 +1,27 @@
-<section class="mb-5">
-    <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-red">Limited</span><h2 class="mb-0">Limited Editions</h2></div>
-    <product-carousel [products]="limitedProducts"></product-carousel>
-</section>
+<div class="cue-page-container">
+    <div class="content-container">
+        <h2>Search on our products: </h2>
+        <div class="search-bar d-flex"><input type="text" placeholder="Type keywords to search" [(ngModel)]="filterKeywords" (keydown)="onKeyDownEvent($event)"> <span class="material-symbols-outlined" (click)="search()">search</span></div>
+        <section class="mb-5" *ngIf="searchProducts">
+            <div class="d-flex align-items-center mb-3 series-title">
+                <h2 class="mb-0" *ngIf="searchProducts.length > 0">Products found:</h2>
+                <h2 class="mb-0" *ngIf="searchProducts.length === 0">Sorry, we could not find any products based on your keywords.</h2>
+            </div>
+            <div class="series-container">
+                <div class="product-card-container mb-3" *ngFor="let product of searchProducts"><ui-product-card [product]="product"></ui-product-card></div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-red">Limited</span><h2 class="mb-0">Limited Editions</h2></div>
+            <product-carousel [products]="limitedProducts"></product-carousel>
+        </section>
+        <section class="mb-5">
+            <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">popular</span><h2 class="mb-0">Popular Cues</h2></div>
+            <product-carousel [products]="popularProducts"></product-carousel>
+        </section>
+        <section class="mb-5">
+            <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Jump</span><h2 class="mb-0">Jump Cues</h2></div>
+            <product-carousel [products]="jumpCueSeriesProducts"></product-carousel>
+        </section>
+    </div>
+<div>

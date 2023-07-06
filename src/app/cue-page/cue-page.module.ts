@@ -7,6 +7,7 @@ import { UiProductCarouselModule } from '../ui-components/ui-product-carousel/ui
 import { CuePlayingComponent } from './cue-page/cue-playing/cue-playing.component';
 import { CueBreakingComponent } from './cue-page/cue-breaking/cue-breaking.component';
 import { CueJumpComponent } from './cue-page/cue-jump/cue-jump.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,6 +23,7 @@ import { CueJumpComponent } from './cue-page/cue-jump/cue-jump.component';
     CommonModule,
     CueRoutingModule,
     UiProductCarouselModule,
+    FormsModule,
     
   ],
   exports: [
