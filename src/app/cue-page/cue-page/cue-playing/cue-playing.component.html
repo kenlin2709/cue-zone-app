@@ -25,9 +25,15 @@
             </div>
         </section>
         <section class="mb-5">
-            <div class="d-flex align-items-center mb-3 series-title"><span class="mr-2 badge badge-blue">Popular</span><h2 class="mb-0">无极 Infinity Series</h2></div>
+            <div class="d-flex align-items-center mb-3 series-title"><span class="mr-2 badge badge-red">Top tier</span><h2 class="mb-0">无极 Infinity Series</h2></div>
             <div class="series-container">
                 <div class="product-card-container mb-3" *ngFor="let product of infinitySeriesProducts"><ui-product-card [product]="product"></ui-product-card></div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="d-flex align-items-center mb-3 series-title"><span class="mr-2 badge badge-red">Top tier</span><h2 class="mb-0">玄木 XuanMu Series</h2></div>
+            <div class="series-container">
+                <div class="product-card-container mb-3" *ngFor="let product of xuanMuSeriesProducts"><ui-product-card [product]="product"></ui-product-card></div>
             </div>
         </section>
     </div>
