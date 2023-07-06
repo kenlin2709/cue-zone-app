@@ -38,9 +38,13 @@
             line-height: 40px;
             margin-left: 20px;
             color: #f3c811;
-            @media screen and (max-width: 426px) {
+            @media screen and (max-width: 360px) {
                 margin-left: 10px !important;
                 line-height: 20px;
+            }
+            @media screen and (max-width: 600px) {
+                margin-left: 10px !important;
+                line-height: 40px;
             }
         }
 
