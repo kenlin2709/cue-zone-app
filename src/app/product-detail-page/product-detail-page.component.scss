@@ -1,6 +1,9 @@
 .product-detail-page{
     padding: 16px 8px;
     background-color: whitesmoke;
+    @media screen and (max-width: 600px) {
+        padding-bottom: 80px;
+    }
     .product-detail-container{
         max-width: 1000px;
         margin-left: auto;

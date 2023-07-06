@@ -1,30 +1,32 @@
-<div class="slide-show mb-4">
-    <div class="slide" [ngStyle]="{'background-image': getCurrentImgUrl()}">
-        <div class="dot-container mx-auto">
-            <span class="material-symbols-outlined" [ngClass]="slideNumber === imgIndex ? 'active' : ''" *ngFor="let item of imgUrls; let imgIndex = index" (click)="goToSlide(imgIndex)">
-                counter_8
-            </span>
+<div class="home-container">
+    <div class="slide-show mb-4">
+        <div class="slide" [ngStyle]="{'background-image': getCurrentImgUrl()}">
+            <div class="dot-container mx-auto">
+                <span class="material-symbols-outlined" [ngClass]="slideNumber === imgIndex ? 'active' : ''" *ngFor="let item of imgUrls; let imgIndex = index" (click)="goToSlide(imgIndex)">
+                    counter_8
+                </span>
+            </div>
         </div>
+        
     </div>
-    
+    <section class="mb-5">
+        <a [routerLink]="'/cues/discover'" class="float-right"> View more</a>
+        <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-red">Limited</span><h2 class="mb-0">Limited Editions</h2></div>
+        <product-carousel [products]="limitedProducts"></product-carousel>
+    </section>
+    <section class="mb-5">
+        <a [routerLink]="'/cues/discover'" class="float-right"> View more</a>
+        <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Popular</span><h2 class="mb-0">Most Popular</h2></div>
+        <product-carousel [products]="popularProducts"></product-carousel>
+    </section>
+    <section class="mb-5">
+        <a [routerLink]="'/cues/discover'" class="float-right"> View more</a>
+        <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Hardcore</span><h2 class="mb-0">Break/Jump Cues</h2></div>
+        <product-carousel [products]="breakAndJumpProducts"></product-carousel>
+    </section>
+    <section class="mb-5">
+        <a [routerLink]="'/accessories'" class="float-right"> View more</a>
+        <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Essential</span><h2 class="mb-0">Accessories</h2></div>
+        <product-carousel [products]="accessories"></product-carousel>
+    </section>
 </div>
-<section class="mb-5">
-    <a [routerLink]="'/cues/discover'" class="float-right"> View more</a>
-    <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-red">Limited</span><h2 class="mb-0">Limited Editions</h2></div>
-    <product-carousel [products]="limitedProducts"></product-carousel>
-</section>
-<section class="mb-5">
-    <a [routerLink]="'/cues/discover'" class="float-right"> View more</a>
-    <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Popular</span><h2 class="mb-0">Most Popular</h2></div>
-    <product-carousel [products]="popularProducts"></product-carousel>
-</section>
-<section class="mb-5">
-    <a [routerLink]="'/cues/discover'" class="float-right"> View more</a>
-    <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Hardcore</span><h2 class="mb-0">Break/Jump Cues</h2></div>
-    <product-carousel [products]="breakAndJumpProducts"></product-carousel>
-</section>
-<section class="mb-5">
-    <a [routerLink]="'/accessories'" class="float-right"> View more</a>
-    <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Essential</span><h2 class="mb-0">Accessories</h2></div>
-    <product-carousel [products]="accessories"></product-carousel>
-</section>

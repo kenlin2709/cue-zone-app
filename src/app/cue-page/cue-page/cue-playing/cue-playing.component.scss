@@ -8,6 +8,9 @@
         margin-right: auto;
         max-width: 1200px;
     }
+    @media screen and (max-width: 600px) {
+        padding-bottom: 80px;
+    }
 }
 .series-title{
     padding-left: 30px;

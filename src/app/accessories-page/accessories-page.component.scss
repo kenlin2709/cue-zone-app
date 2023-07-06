@@ -1,5 +1,8 @@
 .cue-page-container{
     background-color: whitesmoke;
+    @media screen and (max-width: 600px) {
+        padding-bottom: 80px;
+    }
     .content-container{
         background-color: white;
         width: 95%;
