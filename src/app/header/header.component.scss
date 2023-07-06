@@ -98,13 +98,12 @@ a:hover, a:focus{
     opacity: 0;
     transform: translateY(-370px);
     transition: opacity 500ms ease-out, transform 500ms ease-out, visibility 500ms;
+    height: calc(100% - 130px);
 
     a{
         text-decoration: none;
         height: 60px;
         border-top: rgb(226, 219, 219) 1px solid;
-        margin-top: auto;
-        margin-bottom: auto;
         line-height: 60px;
 
         span{

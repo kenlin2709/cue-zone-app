@@ -1,5 +1,11 @@
 .footer{
     background-color: #161616;
+    @media screen and (max-width: 600px) {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+    }
 }
 .contact-container{
     @media screen and (max-width: 600px) {
