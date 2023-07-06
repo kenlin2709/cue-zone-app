@@ -1,4 +1,4 @@
-import { infinitySeriesProduct, limitedProduct, taichiSeriesProduct } from './../../../product-detail-page/product-data';
+import { infinitySeriesProduct, limitedProduct, taichiSeriesProduct, speedSeriesProduct } from './../../../product-detail-page/product-data';
 import { Component } from '@angular/core';
 import { IProduct, eleganceSeriesProduct, getProductDataByProductCodes, productDetailData } from 'src/app/product-detail-page/product-data';
 import { SwiperOptions } from 'swiper';
@@ -13,5 +13,6 @@ export class CuePlayingComponent {
   limitedProducts = getProductDataByProductCodes(limitedProduct);
   taichiSeriesProducts = getProductDataByProductCodes(taichiSeriesProduct);
   infinitySeriesProducts = getProductDataByProductCodes(infinitySeriesProduct);
+  speedSeriesProducts = getProductDataByProductCodes(speedSeriesProduct);
 
 }
