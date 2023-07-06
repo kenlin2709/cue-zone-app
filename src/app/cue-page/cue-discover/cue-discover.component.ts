@@ -1,4 +1,4 @@
-import { IProduct, getProductDataByProductCodes, limitedProduct, mostPopularProduct, productDetailData, jumpCueSeriesProduct, eleganceSeriesProduct } from './../../product-detail-page/product-data';
+import { IProduct, getProductDataByProductCodes, limitedProduct, mostPopularProduct, productDetailData, jumpCueSeriesProduct, eleganceSeriesProduct, breakCueSeriesProduct } from './../../product-detail-page/product-data';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -10,6 +10,7 @@ export class CueDiscoverComponent {
 
   limitedProducts = getProductDataByProductCodes(limitedProduct);
   popularProducts = getProductDataByProductCodes(eleganceSeriesProduct);
+  breakCueSeriesProducts = getProductDataByProductCodes(breakCueSeriesProduct);
   jumpCueSeriesProducts = getProductDataByProductCodes(jumpCueSeriesProduct);
   filterKeywords: string = '';
   searchProducts!: IProduct[];

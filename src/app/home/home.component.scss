@@ -54,10 +54,16 @@ section{
 a{
     text-decoration: none;
     color: #000;
-    margin-right:20px;
+    margin-right:5px;
     padding: 3px 6px;
     border-radius: 10px;
+    top:-5px;
+    position:relative;
+    border: #fff 1px solid;
     &:hover{
         border: #000 1px solid;
+    }
+    @media screen and (min-width: 600px) {
+        margin-right: 20px;
     }
 }

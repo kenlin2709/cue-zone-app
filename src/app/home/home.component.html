@@ -19,6 +19,11 @@
     <product-carousel [products]="popularProducts"></product-carousel>
 </section>
 <section class="mb-5">
+    <a [routerLink]="'/cues/discover'" class="float-right"> View more</a>
+    <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Hardcore</span><h2 class="mb-0">Break/Jump Cues</h2></div>
+    <product-carousel [products]="breakAndJumpProducts"></product-carousel>
+</section>
+<section class="mb-5">
     <a [routerLink]="'/accessories'" class="float-right"> View more</a>
     <div class="d-flex align-items-center mb-3"><span class="mr-2 badge badge-blue">Essential</span><h2 class="mb-0">Accessories</h2></div>
     <product-carousel [products]="accessories"></product-carousel>
