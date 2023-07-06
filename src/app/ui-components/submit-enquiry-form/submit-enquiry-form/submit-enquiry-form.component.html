@@ -1,7 +1,7 @@
 <div *ngIf="!messageSent" class="enquiry-form-container">
     <div class="enquiry-form">
         <h2 class="mb-4 d-inline-block">Enquiry form</h2> <span class="material-symbols-outlined clickable float-right" (click)="closeSubmitForm()">close</span>
-        <form [formGroup]="enquiryFormControl" (ngSubmit)="onSubmit()">
+        <form [formGroup]="enquiryFormControl">
             <label class="d-block mb-1" for="name">Full Name: *</label>
             <input id="name" type="text" formControlName="name">
             <label class="d-block mb-1 mt-2" for="email">Contact Email: *</label>
@@ -11,7 +11,7 @@
             <label class="d-block mb-1 mt-2" for="message">Message: *</label>
             <textarea id="message" type="text" formControlName="message"> </textarea>
             <p *ngIf="!enquiryFormControl.valid && submitClicked">Please ensure all sections are valid to submit<p>
-            <button type="submit">Submit</button>
+            <button type="submit" (click)="onSubmit()" [disabled]="submitting">Submit <span class="material-symbols-outlined" *ngIf="submitting">autorenew</span></button>
         </form>
     </div>
 </div>

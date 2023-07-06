@@ -16,6 +16,7 @@ export class SubmitEnquiryFormComponent implements OnInit{
   enquiryFormControl!: FormGroup;
   submitClicked = false;
   messageSent = false;
+  submitting = false;
 
   constructor( @Inject(PLATFORM_ID) platformId: Object,
               private productDetailPageComponent: ProductDetailPageComponent){
@@ -41,8 +42,10 @@ export class SubmitEnquiryFormComponent implements OnInit{
     onSubmit(){
       this.submitClicked = true;
       if(this.enquiryFormControl.valid){
+        this.submitting = true;
         this.sendEmail().then((result: EmailJSResponseStatus) => {
           this.messageSent = true;
+          this.submitting = false;
         }, (error) => {
          if(isPlatformBrowser(PLATFORM_ID)){ window.alert('Message failed to send, please add our social media to enquiry.')}
         });;
