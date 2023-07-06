@@ -13,7 +13,7 @@ const routes: Routes = [
     children: [
       {path:'discover', component: CueDiscoverComponent,},
       {path:'playing', component: CuePlayingComponent,},
-      {path:'breaking', component: CueBreakingComponent,},
+      {path:'break', component: CueBreakingComponent,},
       {path:'jump', component: CueJumpComponent,}
     ]
   }

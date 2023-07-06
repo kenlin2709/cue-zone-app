@@ -30,6 +30,9 @@ export const eleganceSeriesProduct: string[] = [
 export const taichiSeriesProduct: string[] = [
     'TaiChiII-PS2-01', 'TaiChiII-PS2-02', 'TaiChiII-PS2-04'
 ]
+export const breakCueSeriesProduct: string[] = [
+    'ORIENTAL-S', 'VR1-R', 'BLCT-BT4', 'BLCT-BT3'
+]
 export const jumpCueSeriesProduct: string[] = [
     'PWX-T1', 'PBH-T1', 'PBH-T2', 'PBH-H1'
 ]
@@ -440,6 +443,50 @@ export const productDetailData: IProductData = {
     brand: 'Peri',
     inStock: 0,
     keyword: 'accessory accessories',
+    },
+    'ORIENTAL-S':  { name: '东方龙-S ORIENTAL-S',
+    price: 1668,
+    coverImgUrl: 'ORIENTAL-S-cover.jpg',
+    productImgUrls: ['ORIENTAL-S-1.jpg', 'ORIENTAL-S-2.jpg','ORIENTAL-S-3.jpg','ORIENTAL-S-4.jpg','ORIENTAL-S-5.jpg',],
+    itemCode:'ORIENTAL-S',
+    description: 'Please find the description on the image for more information',
+    type: 'cue',
+    brand: 'Peri',
+    inStock: 0,
+    keyword: '冲杆 chonggan break cue breaking cue dfl 冲干',
+    },
+    'VR1-R': { name: '征服者 VR1-R',
+    price: 599,
+    coverImgUrl: 'VR1-R-cover.jpg',
+    productImgUrls: ['VR1-R-1.jpg', 'VR1-R-2.jpg','VR1-R-3.jpg','VR1-R-4.jpg','VR1-R-5.jpg','VR1-R-6.jpg', 'VR1-R-7.jpg', 'VR1-R-8.jpg', 'VR1-R-9.jpg', 'VR1-R-10.jpg', 'VR1-R-11.jpg', 'VR1-R-12.jpg', 'VR1-R-13.jpg',],
+    itemCode:'ORIENTAL-S',
+    description: 'Please find the description on the image for more information',
+    type: 'cue',
+    brand: 'Peri',
+    inStock: 0,
+    keyword: '冲杆 chonggan break cue breaking cue 冲干',
+    },
+    'BLCT-BT4': { name: '暴龙冲跳 BT4',
+    price: 445,
+    coverImgUrl: 'BLCT-BT4-cover.jpg',
+    productImgUrls: ['BLCT-BT4-1.jpg', 'BLCT-BT4-2.jpg','BLCT-BT4-3.jpg','BLCT-BT4-4.jpg','BLCT-BT4-5.jpg','BLCT-BT4-6.jpg',],
+    itemCode:'BLCT-BT4',
+    description: 'Please find the description on the image for more information',
+    type: 'cue',
+    brand: 'Peri',
+    inStock: 0,
+    keyword: '冲杆 chonggan break cue breaking cue 冲干',
+    },
+    'BLCT-BT3': { name: '暴龙冲跳 BT3',
+    price: 415,
+    coverImgUrl: 'BLCT-BT3-cover.jpg',
+    productImgUrls: ['BLCT-BT3-1.jpg', 'BLCT-BT3-2.jpg','BLCT-BT3-3.jpg','BLCT-BT3-4.jpg','BLCT-BT3-5.jpg','BLCT-BT3-6.jpg', 'BLCT-BT3-7.jpg', 'BLCT-BT3-8.jpg',],
+    itemCode:'BLCT-BT3',
+    description: 'Please find the description on the image for more information',
+    type: 'cue',
+    brand: 'Peri',
+    inStock: 0,
+    keyword: '冲杆 chonggan break cue breaking cue 冲干',
     },
 }
 
