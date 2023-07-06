@@ -28,7 +28,7 @@ export class SubmitEnquiryFormComponent implements OnInit{
     //Add 'implements OnInit' to the class.
     this.enquiryFormControl = new FormGroup({
       name: new FormControl('' , Validators.required),
-      email: new FormControl('', Validators.email),
+      email: new FormControl('', [Validators.email, Validators.required],),
       message: new FormControl('', Validators.required),
       suburb: new FormControl('', Validators.required),
       postcode: new FormControl('', Validators.required),
@@ -41,6 +41,9 @@ export class SubmitEnquiryFormComponent implements OnInit{
 
     onSubmit(){
       this.submitClicked = true;
+      Object.keys(this.enquiryFormControl.controls).forEach(key => {
+        this.enquiryFormControl.get(key)?.markAsTouched();
+      });
       if(this.enquiryFormControl.valid){
         this.submitting = true;
         this.sendEmail().then((result: EmailJSResponseStatus) => {
