@@ -41,7 +41,7 @@ export class CueDiscoverComponent {
   }
 
   limitedProducts = getProductDataByProductCodes(limitedProduct);
-  popularProducts = getProductDataByProductCodes(eleganceSeriesProduct);
+  popularProducts = getProductDataByProductCodes(mostPopularProduct);
   breakCueSeriesProducts = getProductDataByProductCodes(breakCueSeriesProduct);
   jumpCueSeriesProducts = getProductDataByProductCodes(jumpCueSeriesProduct);
   filterKeywords: string = '';
